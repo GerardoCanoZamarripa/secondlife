@@ -1,0 +1,13 @@
+.slider-bg7 {
+    background-image: url(../img/hero/por.jpg);
+}
+.visit-tailor-area .tailor-offers1 {
+    background-image: url(../img/gallery/por.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 570px;
+    width: 55%;
+}
+.header-left .logo1{display:flex !important}.header-area .header-sticky.sticky-bar .menu-wrapper .header-left .logo2{display:flex}.header-area .menu-wrapper{display:flex;align-content:center ;justify-content:space-between;flex-wrap:wrap;align-items:center}.header-area .menu-wrapper .logo1{position:absolute;z-index:2;top:50;left:20px}@media only screen and (min-width: 100px) and (max-width: 100px){.header-area .menu-wrapper .logo1 img{width:100px}}@media only screen and (min-width: 100px) and (max-width: 100px){.header-area .menu-wrapper .logo1 img{width:100px}}@media only screen and (min-width: 100px) and (max-width: 100px){.header-area .menu-wrapper .logo1 img{width:100px}}@media only screen and (min-width: 100px) and (max-width: 100px){.header-area .menu-wrapper .logo1 img{width:100px}}@media (max-width: 100px){.header-area .menu-wrapper .logo1 img{width:100px}}
