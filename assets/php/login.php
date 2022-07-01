@@ -11,7 +11,6 @@ if(isset($_POST['email'])){
         $result = mysqli_query($connect, $query);
         $filas = mysqli_fetch_array($result);
 
-        if($filas){
             session_start();
             $_SESSION['usuario'] = $filas['first_name'];
             $_SESSION['apellido'] = $filas['last_name'];
@@ -28,9 +27,6 @@ if(isset($_POST['email'])){
             if ($_SESSION['permiso'] == 2) {
                 header('location: ../../user.php');
             }
-        }else{
-            printf("<script> alert('Usuario y/o Contraseña incorrectos')</script>");
-            printf("<script>window.location.href = '../../login.html';</script>");
         }
     }else header('location: ../../login.html');
 }else header('location: ../../login.html');
