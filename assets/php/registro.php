@@ -8,12 +8,14 @@ if (isset($_POST['nombre']) && $_POST['nombre'] != null) {
     $email = $_POST['email'];
     $pass = $_POST['pass'];
 
+    $key = $pass.$email;
+    $clave = md5($key);
     
 
     include('conexion.php');
     $query = "INSERT INTO USUARIOS (id_usuario, first_name, last_name, correo_electronico, pass, id_permiso)
-VALUES (null, '$nombre', '$apellido', '$email', '$pass', 2)";
-    if ($connect->query($query)) {
+VALUES (null, '$nombre', '$apellido', '$email', '$clave', 2)";
+    if ($pdo->query($query)) {
 ?>
         <!DOCTYPE html>
         <html>
