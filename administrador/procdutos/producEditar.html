@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Ingrese sus credenciales para acceder</title>
+    <title>Actualizar un producto</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="../site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="../image/x-icon" href="../assets/img/favicon.ico">
 
     <!-- CSS here -->
@@ -50,10 +50,10 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="login-form">
-                            <form action="assets/php/login.php" method="post">
+                            <form action="../assets/php/login.php" method="post">
                                 <!-- Login Heading -->
                                 <div class="login-heading">
-                                    <span>Agregar Productos</span>
+                                    <span>Editar Productos</span>
                                 </div>
                                 <!-- Single Input Fields -->
 
@@ -64,21 +64,21 @@
                                     </div>
                                     <div class="single-input-fields">
                                         <label>Foto</label>
-                                        <input type="image" placeholder="Foto frontal" name="image" pattern="[a-zA-Z0-9]{3,}" required>
-                                        <input type="image" placeholder="Foto trasera" name="image" pattern="[a-zA-Z0-9]{3,}" required>
-                                        <input type="image" placeholder="Foto de cualquier ángulo difernte" name="image" pattern="[a-zA-Z0-9]{3,}" required>
+                                        <input type="image" placeholder="Foto frontal" name="imagef" pattern="[a-zA-Z0-9]{3,}" required>
+                                        <input type="image" placeholder="Foto trasera" name="imaget" pattern="[a-zA-Z0-9]{3,}" required>
+                                        <input type="image" placeholder="Foto de cualquier ángulo difernte" name="imaged" pattern="[a-zA-Z0-9]{3,}" required>
                                     </div>
                                     <div class="single-input-fields">
                                         <label>Descripció</label>
-                                        <input type="text" placeholder="Materiales" name="clave" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
-                                        <input type="text" placeholder="Marca" name="clave" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
-                                        <input type="text" placeholder="Dimensiones" name="clave" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
-                                        <input type="text" placeholder="Condiciones del artículo" name="clave" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
-                                        <input type="text" placeholder="Observaciones" name="clave" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
-                                        <input type="text" placeholder="Precio" name="clave" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
+                                        <input type="text" placeholder="Materiales" name="materiales" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
+                                        <input type="text" placeholder="Marca" name="marca" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
+                                        <input type="text" placeholder="Dimensiones" name="dimensiones" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
+                                        <input type="text" placeholder="Condiciones del artículo" name="condiciones" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
+                                        <input type="text" placeholder="Observaciones" name="observaciones" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
+                                        <input type="text" placeholder="Precio" name="precio" pattern="[A-Za-z. áéíóúñÑ]{3,60}$"  required>
                                     </div>
                                     <div class="login-footer">
-                                        <button type="submit" class="submit-btn3">Agregar</button>
+                                        <button type="submit" class="submit-btn3">Editar</button>
                                     </div>
                                     </div>
                                 </div>
