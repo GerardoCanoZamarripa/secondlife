@@ -7,10 +7,10 @@ if (!(isset($_SESSION['usuario']) && strlen($_SESSION['usuario']) > 1)) {
 $usuario = $_SESSION['usuario'];
 $apellido = $_SESSION['apellido'];
 
-if ($_POST) {
+if ($_REQUEST) {
     include_once('assets/php/Carrito.php');
     $carro = new Carrito;
-    $carro->eliminarProducto($_POST['id_producto'], $_SESSION['id_usuario']);
+    $carro->eliminarProducto($_REQUEST['p'], $_SESSION['id_usuario']);
 }
 ?>
 <!doctype html>
@@ -43,7 +43,11 @@ if ($_POST) {
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script>
+        function enviar_formulario(){
+            document.formulario1.submit()
+        }
+    </script>
 </head>
 
 <body>
@@ -152,6 +156,7 @@ if ($_POST) {
                                 <tr>
                                     <th scope="col">Producto</th>
                                     <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
@@ -182,7 +187,7 @@ if ($_POST) {
                                     </td>
                                     <td>
                                         <h5>
-                                            <?= '$'.$carro->obtenerSubtotal($_SESSION['id_usuario']);?>
+                                            <?= '$' . $carro->obtenerSubtotal($_SESSION['id_usuario']); ?>
                                         </h5>
                                     </td>
                                 </tr>
@@ -383,11 +388,7 @@ if ($_POST) {
     </div>
 
     <!-- JS here -->
-    <script>
-        function enviar_formulario() {
-            document.formulario1.submit()
-        }
-    </script>
+    
     <!-- Jquery, Popper, Bootstrap -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
