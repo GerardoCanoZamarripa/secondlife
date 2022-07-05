@@ -37,7 +37,7 @@ if (isset($_POST['email'])) {
             $_SESSION['permiso'] = $registro['id_permiso'];
 
             if ($_SESSION['permiso'] == 1) {
-                header('location: ../../admin.php');
+                header('location: ../../administrador/index.php');
             }
             if ($_SESSION['permiso'] == 2) {
                 header('location: ../../usuario/index.php');
