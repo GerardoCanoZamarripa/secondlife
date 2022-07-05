@@ -12,8 +12,6 @@ class Permiso{
     //Implementación de método para listar permisos
     public function listarPermisos()
     {
-        $query = "SELECT * FROM PERMISOS";
-        return ejecutarConsulta($query);
     }
 }
 ?>
